@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#f5f7fb">
+<title>YKS Yol Arkadaşım</title>
+<style>
+:root{color-scheme:light;--bg:#f5f7fb;--card:#fff;--ink:#172033;--muted:#68738a;--line:#e4e9f1;--accent:#5768e8;--accent2:#20a486;--soft:#eef0ff;--warn:#fff6df;--shadow:0 8px 28px rgba(20,31,61,.07)}
+[data-theme="dark"]{color-scheme:dark;--bg:#111622;--card:#1a2231;--ink:#eef2fb;--muted:#a4afc3;--line:#303a4b;--accent:#9aa5ff;--accent2:#54d6b5;--soft:#292e4a;--warn:#3c3422;--shadow:0 8px 28px rgba(0,0,0,.2)}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif;padding-bottom:88px}button,input,textarea,select{font:inherit}button{cursor:pointer;color:inherit}a{color:var(--accent);text-underline-offset:3px}header{max-width:980px;margin:auto;padding:20px 16px 10px}.topline{display:flex;align-items:center;justify-content:space-between;gap:12px}.brand{font-weight:850;font-size:20px;letter-spacing:-.5px}.brand small{display:block;color:var(--muted);font-weight:500;font-size:12px;letter-spacing:0}.head-actions{display:flex;gap:8px}.iconbtn,.pillbtn{border:1px solid var(--line);background:var(--card);border-radius:14px;min-height:46px;padding:0 13px;box-shadow:var(--shadow)}.countdown{margin-top:15px;background:linear-gradient(120deg,#5969eb,#8067d9);color:white;border-radius:20px;padding:16px 18px;display:flex;align-items:center;justify-content:space-between;gap:12px;box-shadow:var(--shadow)}.countdown strong{font-size:25px;line-height:1}.countdown span{font-size:13px;opacity:.92}.countdown .date{font-weight:700;text-align:right}.studentbar{display:flex;gap:8px;margin:14px 0 4px}.studentbtn{flex:1;border:1px solid var(--line);background:var(--card);border-radius:15px;padding:10px 12px;min-height:48px;font-weight:700}.studentbtn.active{background:var(--soft);border-color:var(--accent);color:var(--accent)}main{max-width:980px;margin:auto;padding:8px 16px 32px}.viewnav{display:flex;gap:8px;overflow:auto;padding:6px 0 14px;scrollbar-width:none}.viewnav button{flex:none;border:1px solid var(--line);border-radius:999px;background:var(--card);padding:10px 15px;min-height:44px;color:var(--muted);font-weight:650}.viewnav button.active{background:var(--ink);color:var(--bg);border-color:var(--ink)}.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:17px;margin:10px 0;box-shadow:var(--shadow)}.card h2,.card h3{margin:0 0 8px;letter-spacing:-.25px}.muted{color:var(--muted)}.eyebrow{text-transform:uppercase;letter-spacing:.1em;font-size:11px;font-weight:800;color:var(--muted)}.quote{background:var(--soft);border:0;font-size:18px;font-weight:700;line-height:1.35}.weeknav{display:flex;align-items:center;justify-content:space-between;gap:10px}.weeknav h2{font-size:18px;margin:0;text-align:center}.arrow{border:1px solid var(--line);background:var(--card);border-radius:13px;width:48px;height:48px;font-size:20px}.progressline{height:10px;background:var(--line);border-radius:99px;overflow:hidden;margin:8px 0 4px}.progressline i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--accent),var(--accent2));border-radius:inherit;transition:width .25s}.progressmeta{display:flex;justify-content:space-between;font-size:13px;color:var(--muted)}.day{padding:0;overflow:hidden}.day summary{display:flex;align-items:center;justify-content:space-between;gap:10px;list-style:none;padding:16px;cursor:pointer;min-height:68px}.day summary::-webkit-details-marker{display:none}.daytitle{font-weight:800}.daydate{font-size:12px;color:var(--muted)}.daypercent{font-weight:750;color:var(--accent);font-size:13px}.daybody{padding:0 15px 16px;border-top:1px solid var(--line)}.daytheme{font-size:13px;color:var(--muted);padding:11px 0 5px}.tasklist{display:grid;gap:8px}.task{display:grid;grid-template-columns:28px 1fr auto;align-items:start;gap:10px;padding:11px 10px;border:1px solid var(--line);border-radius:14px;min-height:54px}.task input{width:23px;height:23px;margin:1px 0;accent-color:var(--accent2)}.taskname{font-size:14px;font-weight:650}.task.done .taskname{text-decoration:line-through;color:var(--muted)}.duration{font-size:12px;color:var(--muted);white-space:nowrap}.note{width:100%;min-height:78px;resize:vertical;margin-top:12px;border:1px solid var(--line);border-radius:13px;background:var(--bg);color:var(--ink);padding:11px}.notice{background:var(--warn);border-radius:14px;padding:12px 13px;font-size:13px}.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.stat{padding:14px;border:1px solid var(--line);border-radius:16px}.stat b{display:block;font-size:20px}.weekchips{display:flex;gap:6px;flex-wrap:wrap}.tag{display:inline-block;border-radius:99px;background:var(--soft);color:var(--accent);padding:4px 9px;font-size:12px;font-weight:750}.recordform{display:grid;grid-template-columns:1fr 1fr;gap:10px}.field{display:flex;flex-direction:column;gap:5px}.field label{font-size:12px;color:var(--muted);font-weight:700}.field input,.field select{min-height:46px;border:1px solid var(--line);border-radius:12px;background:var(--bg);color:var(--ink);padding:9px 11px;width:100%}.field.wide{grid-column:1/-1}.submit{border:0;border-radius:14px;min-height:50px;background:var(--accent);color:white;font-weight:800;padding:10px 15px}.records{display:grid;gap:10px}.record{border:1px solid var(--line);border-radius:15px;padding:12px}.recordtop{display:flex;justify-content:space-between;align-items:center;gap:12px}.recordtop b{font-size:14px}.recorddata{font-size:13px;color:var(--muted);margin-top:6px}.delete{border:1px solid var(--line);background:var(--bg);border-radius:11px;padding:7px 10px}.bars{display:grid;gap:9px}.barrow{display:grid;grid-template-columns:90px 1fr 48px;gap:8px;align-items:center;font-size:13px}.barbg{height:12px;background:var(--line);border-radius:99px;overflow:hidden}.barfill{height:100%;background:var(--accent2);border-radius:99px}.resource{padding:14px 0;border-top:1px solid var(--line)}.resource:first-of-type{border-top:0}.resource b{display:block}.resource p{font-size:14px;color:var(--muted);margin:4px 0 8px}.resource a{font-size:13px;font-weight:750}.footer{text-align:center;font-size:12px;color:var(--muted);padding:15px 10px}.toast{position:fixed;z-index:10;bottom:84px;left:50%;transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:10px 15px;border-radius:99px;box-shadow:var(--shadow);font-size:13px;display:none;max-width:90vw;text-align:center}.bottomnav{position:fixed;z-index:5;bottom:0;left:0;right:0;padding:10px 12px calc(10px + env(safe-area-inset-bottom));display:flex;justify-content:center;background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:blur(12px);border-top:1px solid var(--line)}.bottomnav button{max-width:950px;width:100%;min-height:50px;border:0;border-radius:15px;background:var(--accent);color:#fff;font-weight:800}.small{font-size:13px}.center{text-align:center}.hidden{display:none!important}@media(min-width:760px){body{padding-bottom:30px}header{padding-top:26px}.studentbar{max-width:480px}.programgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.programgrid .day{margin:0}.bottomnav{display:none}.card{padding:20px}}@media(max-width:420px){.brand{font-size:18px}.countdown strong{font-size:23px}.countdown{padding:14px}.card{padding:15px}.task{grid-template-columns:26px 1fr auto;gap:8px;padding:10px 8px}.taskname{font-size:13px}.duration{font-size:11px}.grid2{gap:7px}}
+.dayquote{font-size:13px;font-weight:650;color:var(--accent);padding:7px 10px;margin:5px 0 8px;background:var(--soft);border-radius:11px}
+</style>
+</head>
+<body>
+<header>
+  <div class="topline">
+    <div class="brand">YKS Yol Arkadaşım<small>Sayısal çalışma ve takip defteri</small></div>
+    <div class="head-actions">
+      <button class="iconbtn" id="themeBtn" aria-label="Temayı değiştir">🌙</button>
+      <button class="iconbtn" id="resetBtn" aria-label="Tüm kayıtları sıfırla">↺</button>
+    </div>
+  </div>
+  <div class="countdown"><div><span>YKS 2027'ye</span><br><strong id="countNum">—</strong> <span id="countLabel">gün kaldı</span></div><span class="date">19–20 Haziran<br>2027</span></div>
+  <div class="studentbar" id="students"></div>
+</header>
+<main>
+  <nav class="viewnav" id="viewnav" aria-label="Bölümler"></nav>
+  <div id="content"></div>
+  <div class="footer">Çalışma süresi net çalışma dakikasıdır; molalar dahil değildir. İstikrar, kusursuz günden daha değerlidir.</div>
+</main>
+<div class="bottomnav"><button id="todayBtn">Bugünün planına git</button></div>
+<div class="toast" id="toast" role="status"></div>
+<script>
+"use strict";
+const KEY="yks-yol-arkadasim-v1", EXAM=new Date(2027,5,19,0,0,0), START=new Date(2026,10,9,0,0,0);
+const PEOPLE=["Abdurrahman","Tuana"], DAYNAMES=["Pazartesi","Salı","Çarşamba","Perşembe","Cuma","Cumartesi","Pazar"];
+const QUOTES=[
+"Bugün attığın küçük adım, sınav günü büyük fark yaratır.","Başlamak için hazır hissetmeyi bekleme; başlayınca hazır olursun.","Her yanlış, doğruya giden yolu biraz daha belirginleştirir.","Düzenli emek, yeteneğin önüne geçer.","Bugün dünden biraz daha iyi olman yeterli.","Zorlandığın konu, gelişeceğin yerdir.","Bir soru daha çöz; kendine verdiğin sözü tut.","Mükemmel değil, devamlı ol.","Odaklandığın her dakika geleceğine eklenir.","Sabırla tekrar edilen bilgi kalıcı olur.",
+"Kendinle yarış; dünün seviyesini geç.","Yavaş ilerlemek de ilerlemektir.","Bugün öğrendiğini yarın hatırlayacaksın.","Büyük hedefler, küçük günlük işlerle kurulur.","Yanlış yapmak öğrenmenin parçası; vazgeçmek zorunda değilsin.","Her gün biraz daha güçleniyorsun.","Bir konu bir seferde değil, tekrarlarla öğrenilir.","Planına dönmek için geç kalmış sayılmazsın.","Bugünkü emeğin, yarınki özgüvenin.","Kendine inanmak, çalışmaya devam etmekle başlar.",
+"Zor sorular seni değil, stratejini geliştirir.","Mola ver, nefes al ve yeniden başla.","İlerlemeni başkasıyla değil, kendi dününle ölç.","Bir test daha, bir adım daha.","Bugün gösterdiğin çaba boşa gitmez.","Her çalışma oturumu hedefe atılmış bir adımdır.","Anlamadığın yeri sormak güçtür, eksiklik değil.","Bugün vazgeçmediğin için yarın teşekkür edeceksin.","Başarı, tekrar tekrar geri dönmektir.","Küçük alışkanlıklar büyük sonuçlar doğurur.",
+"Konsantre olduğun kısa bir süre, dağınık saatlerden iyidir.","Kendine verdiğin sözü bugün de tut.","Bir yanlışın çözümünü öğrenmek, bir doğru daha kazandırır.","Hedefin uzak görünse de bugünkü işin yakında.","Her gün yeniden başlama şansın var.","Çalışma masasındaki emek, gelecekteki seçeneklerini artırır.","Kendini küçümseme; öğrenmek zaman alır.","İlk adım en zorudur; sen onu attın.","Bugün öğrendiklerini kendi cümlelerinle anlat.","Devam et; ilerleme çoğu zaman sessiz görünür."
+];
+const WEEKS=[
+{title:"Temel kurulum",phase:"Temel",math:"İşlem önceliği, doğal ve tam sayılar",physics:"Fizik bilimine giriş, ölçme ve madde",chemistry:"Kimya bilimi, laboratuvar güvenliği ve atom",biology:"Biyoloji bilimi ve canlıların ortak özellikleri",geo:"Temel çizim, doğru, açı ve geometrik dil",language:"Paragrafta ana düşünce ve cümle anlamı",social:"TYT sosyal testinin yapısı"},
+{title:"Sayılarla rahatlama",phase:"Temel",math:"Sayı basamakları, bölünebilme ve rasyonel sayılar",physics:"Vektör, konum, alınan yol ve sürat",chemistry:"Periyodik sistem ve element özellikleri",biology:"Hücre, organeller ve hücre zarı",geo:"Üçgende açılar ve temel kurallar",language:"Paragrafta yardımcı düşünce ve çıkarım",social:"Harita okuma ve temel tarih kavramları"},
+{title:"Cebir temeli",phase:"Temel",math:"Üslü-köklü ifadeler, basit denklemler ve eşitsizlik",physics:"Kuvvet, Newton yasaları ve sürtünme",chemistry:"Kimyasal türler ve etkileşimler",biology:"Canlıların temel bileşenleri ve enzimler",geo:"Üçgende açı-kenar ilişkileri",language:"Paragrafta yapı ve akış",social:"Coğrafi konum, iklim ve temel kavramlar"},
+{title:"İlk temel turu",phase:"Temel",math:"Mutlak değer, oran-orantı ve yüzde",physics:"İş, güç, enerji ve ısı-sıcaklık",chemistry:"Kimyanın temel yasaları ve mol fikrine giriş",biology:"Hücre bölünmeleri ve canlı çeşitliliği",geo:"Dik üçgen, Pisagor ve özel üçgenler",language:"Yazım-noktalama başlangıcı",social:"İlk dört haftanın kısa tekrar testi"},
+{title:"Problemlere giriş",phase:"Temel + TYT",math:"Sayı, kesir, yaş ve yüzde problemleri",physics:"Basınç ve kaldırma kuvveti",chemistry:"Maddenin halleri ve temel özellikleri",biology:"Sınıflandırma ve canlı grupları",geo:"Üçgende alan ve benzerlik",language:"Cümlede anlam ve paragraf süre takibi",social:"Tarih: ilk uygarlıklar ve temel kronoloji"},
+{title:"Problem aileleri",phase:"TYT",math:"İşçi-havuz, hareket ve karışım problemleri",physics:"Isı, sıcaklık, genleşme ve günlük yaşam",chemistry:"Karışımlar ve ayırma yöntemleri",biology:"Hücre döngüsü, mitoz ve mayoz",geo:"Dörtgenler ve çokgenlere giriş",language:"Sözcük türlerine giriş",social:"Coğrafya: harita, yön ve ölçek"},
+{title:"Veri ve temel cebir",phase:"TYT",math:"Kümeler, mantık, veri-grafik ve temel olasılık",physics:"Elektrik yükü, elektriklenme ve devre temeli",chemistry:"Asit, baz ve tuzlar",biology:"Kalıtımın temel kavramları",geo:"Dörtgenlerde alan ve özel şekiller",language:"Yazım kuralları ve noktalama",social:"Felsefe ve din kültüründe temel kavramlar"},
+{title:"Fonksiyonlara hazırlık",phase:"TYT + AYT",math:"Fonksiyon kavramı ve polinomlara giriş",physics:"Dalgalar ve optiğe giriş",chemistry:"Kimyasal tepkimeler ve denklem denkleştirme",biology:"Ekosistem ve ekoloji",geo:"Çember ve daire temel özellikleri",language:"Fiilimsi ve cümle türlerine giriş",social:"TYT sosyal karışık kısa test"},
+{title:"TYT cebir / AYT başlangıç",phase:"TYT + AYT",math:"Fonksiyonlar, polinom işlemleri ve ikinci derece denklemler",physics:"Optik: aydınlanma, gölge ve aynalar",chemistry:"Mol, tepkime hesabı ve gazlara giriş",biology:"Hücre bölünmeleri ve kalıtım tekrar",geo:"Analitik düzlem ve doğru",language:"Paragraf hızında doğruluk",social:"Tarih: Türk-İslam ve Osmanlı başlangıcı"},
+{title:"Parabol ve üçgen",phase:"TYT + AYT",math:"Parabol, eşitsizlik ve denklem uygulamaları",physics:"Elektrik devreleri ve enerji",chemistry:"Gazlar ve çözeltiler",biology:"Kalıtım, çaprazlama ve soy ağacı",geo:"Üçgende benzerlik, açıortay ve kenarortay",language:"Dil bilgisi: sözcük türleri",social:"Coğrafya: nüfus ve yerleşme"},
+{title:"Trigonometri temeli",phase:"AYT başlangıç",math:"Trigonometri oranları, birim çember ve temel özdeşlikler",physics:"Hareket, atışlar ve kuvvetin AYT uygulamaları",chemistry:"Çözeltiler ve derişim",biology:"İnsan fizyolojisi: sinir ve endokrin sistem",geo:"Analitik doğru ve temel uzaklık",language:"Paragraf denemesi ve yanlış analizi",social:"TYT sosyal branş testi"},
+{title:"Fonksiyon ve sistemler",phase:"AYT",math:"Fonksiyon dönüşümleri, bileşke-ters ve trigonometri",physics:"İş-enerji, momentum ve itme",chemistry:"Kimyasal tepkimelerde enerji ve hız",biology:"Duyu, destek-hareket ve sindirim",geo:"Çemberde açı, kiriş ve teğet",language:"Cümle ögeleri ve anlatım",social:"Tarih: Milli Mücadele ve inkılaplar"},
+{title:"Polinom ve elektrik",phase:"AYT",math:"Polinomlar, çarpanlara ayırma ve ikinci derece",physics:"Elektrik alan, potansiyel ve sığaç",chemistry:"Kimyasal denge ve dengeye etki edenler",biology:"Dolaşım, bağışıklık ve solunum",geo:"Çember ve dairede uzunluk-alan",language:"Yazım-noktalama karma tekrar",social:"Coğrafya: ekonomik faaliyetler"},
+{title:"Üstel-logaritma",phase:"AYT",math:"Üstel ve logaritmik fonksiyonlar",physics:"Manyetizma ve indüksiyona giriş",chemistry:"Asit-baz dengesi ve çözünürlük",biology:"Boşaltım, üreme ve gelişme",geo:"Katı cisimler ve hacim",language:"Paragraf hız + dil bilgisi taraması",social:"Felsefe grubu ve din kavramları"},
+{title:"Diziler ve organik giriş",phase:"AYT",math:"Diziler, binom ve olasılık",physics:"Dalgalar, ışık ve modern fiziğe giriş",chemistry:"Organik kimya: temel kavramlar ve hidrokarbonlar",biology:"Bitki biyolojisi: taşıma ve hormonlar",geo:"Analitik geometri ve şekil tekrarı",language:"Paragraf karma test",social:"TYT sosyal eksik tamamlama"},
+{title:"Türev öncesi sağlamlaştırma",phase:"AYT",math:"Limit fikri, süreklilik ve türeve hazırlık",physics:"Mekanik üniteler karma soru çözümü",chemistry:"Organik kimyada fonksiyonel gruplar",biology:"Bitkilerde üreme ve ekoloji",geo:"Geometri: üçgen-dörtgen-çember karması",language:"Dil bilgisi çıkmış soru taraması",social:"TYT sosyal denemesi ve analiz"},
+{title:"Türev ve ilk tam denemeler",phase:"AYT + deneme",math:"Türev kuralları, teğet ve artan-azalan",physics:"Elektrik-manyetizma soru kalıpları",chemistry:"Organik kimya tepkimeleri ve tekrar",biology:"Sistemler genel tekrar",geo:"Analitik geometri soru çözümü",language:"Paragraf branş denemesi",social:"TYT sosyal yanlışlarını kapatma"},
+{title:"Türev uygulamaları",phase:"AYT + deneme",math:"Türevin grafik ve maksimum-minimum uygulamaları",physics:"Optik, dalga ve modern fizik seçilmiş sorular",chemistry:"Denge, asit-baz ve çözünürlük karması",biology:"Genetik, ekoloji ve hücre taraması",geo:"Geometri süreli karma set",language:"Dil bilgisi eksik listesi",social:"TYT sosyal mini deneme"},
+{title:"İntegral ve birikimli tekrar",phase:"AYT + deneme",math:"Belirsiz-belirli integral ve alan",physics:"AYT fizik branş testi ve yanlış kapatma",chemistry:"AYT kimya branş testi ve yanlış kapatma",biology:"AYT biyoloji branş testi ve yanlış kapatma",geo:"Geometri branş denemesi",language:"Türkçe branş denemesi",social:"TYT sosyal branş denemesi"},
+{title:"AYT matematik karması",phase:"AYT + deneme",math:"Limit-türev-integral, trigonometri ve fonksiyon karması",physics:"Mekanik + elektrik iki ünite karma",chemistry:"Organik + denge + çözelti karma",biology:"Sistemler + kalıtım karma",geo:"AYT matematik içindeki geometri taraması",language:"Türkçe yanlış defteri",social:"TYT sosyal yanlış defteri"},
+{title:"Kapsamlı deneme düzeni",phase:"Deneme",math:"AYT matematik seçilmiş yüksek getirili konular ve eksikler",physics:"AYT fizik tüm ünitelerden süreli tarama",chemistry:"AYT kimya tüm ünitelerden süreli tarama",biology:"AYT biyoloji tüm ünitelerden süreli tarama",geo:"TYT geometri karma",language:"Türkçe süre ve paragraf stratejisi",social:"TYT sosyal karışık test"},
+{title:"Sınav pratiği I",phase:"Deneme",math:"AYT matematik deneme analizi: fonksiyon, polinom, trigonometri",physics:"Yanlış çıkan AYT fizik başlıklarını onar",chemistry:"Yanlış çıkan AYT kimya başlıklarını onar",biology:"Yanlış çıkan AYT biyoloji başlıklarını onar",geo:"Geometri kısa tekrar",language:"Türkçe branş denemesi",social:"Sosyal branş denemesi"},
+{title:"Sınav pratiği II",phase:"Deneme",math:"AYT matematik deneme analizi: türev, integral ve diziler",physics:"TYT fizik sık çıkan kavramlar ve deney düzenekleri",chemistry:"TYT kimya temel kavramlar ve hesaplama",biology:"TYT biyoloji hücre, kalıtım ve ekoloji",geo:"TYT geometri yanlışları",language:"Paragraf hız ve doğruluk",social:"TYT sosyal temel kavramlar"},
+{title:"Eksik kapatma I",phase:"Deneme",math:"Kişisel yanlış listendeki en yüksek öncelikli iki başlık",physics:"En çok yanlış çıkan fizik ünitesi",chemistry:"En çok yanlış çıkan kimya ünitesi",biology:"En çok yanlış çıkan biyoloji ünitesi",geo:"Üçgen, dörtgen ve çember hızlı tur",language:"Türkçe branş denemesi ve analiz",social:"Sosyal karışık test ve analiz"},
+{title:"Eksik kapatma II",phase:"Deneme",math:"TYT problem + AYT matematik eksik konu karması",physics:"AYT fizik formül değil kavram tekrarı ve soru",chemistry:"AYT kimya bilgi kartları ve soru",biology:"AYT biyoloji aktif hatırlama ve soru",geo:"Geometri branş denemesi",language:"Paragraf ve dil bilgisi yanlışları",social:"Sosyal yanlış defteri"},
+{title:"Deneme ve analiz döngüsü",phase:"Deneme",math:"Denemede boş kalan matematik sorularının konu onarımı",physics:"Deneme yanlışlarına göre fizik konu onarımı",chemistry:"Deneme yanlışlarına göre kimya konu onarımı",biology:"Deneme yanlışlarına göre biyoloji konu onarımı",geo:"Kısa geometri seti",language:"Türkçe denemesi ve dikkat analizi",social:"Sosyal denemesi"},
+{title:"Net sabitleme I",phase:"Deneme",math:"En çok net getiren TYT problem türleri + AYT eksikleri",physics:"Sık hata yapılan fizik kavramları",chemistry:"Sık hata yapılan kimya kavramları",biology:"Sık karıştırılan biyoloji kavramları",geo:"Geometri temel soru kalıpları",language:"Paragraf temposu ve Türkçe denemesi",social:"Sosyal kısa tekrar"},
+{title:"Net sabitleme II",phase:"Deneme",math:"AYT matematik karma test ve ayrıntılı analiz",physics:"AYT fen denemesi yanlış analizi",chemistry:"AYT fen denemesi yanlış analizi",biology:"AYT fen denemesi yanlış analizi",geo:"TYT geometri taraması",language:"Türkçe denemesi ve paragraf",social:"TYT sosyal denemesi"},
+{title:"Son konu onarımları",phase:"Son tekrar",math:"Yeni konu yok: en önemli eksikler ve yanlış defteri",physics:"Özet kartlar + seçilmiş temel sorular",chemistry:"Özet kartlar + seçilmiş temel sorular",biology:"Aktif hatırlama + seçilmiş temel sorular",geo:"Kolay-orta seviye geometri tekrarı",language:"Paragraf rutini ve yazım-noktalama",social:"Sosyal temel bilgiler"},
+{title:"Sınav provası",phase:"Son tekrar",math:"Deneme analizi; yalnızca tekrarlayan yanlışları onar",physics:"Kısa fizik tekrar testi",chemistry:"Kısa kimya tekrar testi",biology:"Kısa biyoloji tekrar testi",geo:"Temel şekiller ve formül kartları",language:"Kısa Türkçe denemesi",social:"Kısa sosyal denemesi"},
+{title:"Yükü azalt, güveni koru",phase:"Son tekrar",math:"Hafif karma tekrar; zor yeni kaynak açma",physics:"Kısa özet ve güven veren temel sorular",chemistry:"Kısa özet ve güven veren temel sorular",biology:"Kavram kartları ve aktif hatırlama",geo:"Temel geometri gözden geçirme",language:"Her gün paragrafı sürdür, süreyi zorlamadan",social:"Kısa tekrar; uyku düzenini koru"},
+{title:"Sınav haftası",phase:"Sınav haftası",math:"Kısa formül/yanlış defteri turu; enerjiyi koru",physics:"Temel kavram kartları; yeni konu yok",chemistry:"Temel kavram kartları; yeni konu yok",biology:"Aktif hatırlama; yeni konu yok",geo:"En temel şekiller ve sakin tekrar",language:"Rahat tempoda kısa paragraf",social:"Kısa kavram turu, dinlenme ve hazırlık"}
+];
+const MODES=["Konu anlatımı + örnekleri kendi elinle çöz","Dünkü başlığı hatırla, sonra kolay test çöz","Yeni alt başlık + 15–20 temel soru","Süre tut: kolay-orta karışık test","Yanlışlarını çözümünü görmeden yeniden dene","Karışık test ve yanlışların konu etiketini yaz","Haftalık tekrar: kitaba bakmadan anlat"];
+const DATA=loadState();
+let selected=DATA.selected||0, view="program", week=getDefaultWeek(), storageFailed=false;
+function fresh(){return {selected:0,theme:"light",people:PEOPLE.map(()=>({checks:{},notes:{},records:[]}))}}
+function loadState(){try{const raw=localStorage.getItem(KEY);if(!raw)return fresh();const d=JSON.parse(raw);if(!d||!Array.isArray(d.people)||d.people.length!==2)return fresh();return d}catch(e){storageFailed=true;return fresh()}}
+function save(){try{localStorage.setItem(KEY,JSON.stringify(DATA));storageFailed=false}catch(e){storageFailed=true}}
+function safeRemove(){try{localStorage.removeItem(KEY)}catch(e){storageFailed=true}}
+function person(){return DATA.people[selected]}
+function getDefaultWeek(){const day=Math.floor((new Date().setHours(0,0,0,0)-START.getTime())/86400000);return Math.max(0,Math.min(31,Math.floor(day/7)))}
+function esc(v){return String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+function pad(n){return String(n).padStart(2,"0")}
+function dateOf(w,d){return new Date(START.getFullYear(),START.getMonth(),START.getDate()+w*7+d)}
+function dateKey(dt){return dt.getFullYear()+"-"+pad(dt.getMonth()+1)+"-"+pad(dt.getDate())}
+function fmt(dt,opts){return new Intl.DateTimeFormat("tr-TR",opts||{day:"numeric",month:"short"}).format(dt)}
+function quoteFor(dt){const serial=Math.floor(Date.UTC(dt.getFullYear(),dt.getMonth(),dt.getDate())/86400000);return QUOTES[((serial%QUOTES.length)+QUOTES.length)%QUOTES.length]}
+function quoteToday(){return quoteFor(new Date())}
+function subjectFor(key){return {physics:"Fizik",chemistry:"Kimya",biology:"Biyoloji"}[key]||key}
+function topic(key){return WEEKS[week][key]}
+function focusFor(w,d){const m=MODES[d];return {math:WEEKS[w].math, mode:m}}
+function dayTasks(w,d){
+ const wk=WEEKS[w], mode=MODES[d], science=["physics","chemistry","biology"][d%3], second=["chemistry","biology","physics"][d%3];
+ let tasks=[
+  ["par","Paragraf rutini: "+(w<8?"15 soru, süreden çok doğru anlama":"20 soru, süre + yanlış analizi"),25],
+  ["speed","Matematik hız çalışması: 10 temel işlem + 10 problem; takıldığını işaretle",35],
+  ["math","TYT/AYT matematik — "+wk.math+" · "+mode,75],
+  ["sci1",subjectFor(science)+" — "+wk[science]+" · konu + kolay soru",65],
+  ["sci2",subjectFor(second)+" — "+wk[second]+" · aktif hatırlama + test",65],
+  ["rot","Geometri / dil bilgisi / TYT sosyal: "+[wk.geo,wk.language,wk.social][d%3],45],
+  ["review","Yanlış defteri + dünkü konulara 10 dakikalık kapalı kitap tekrar",50]
+ ];
+ const examPhase=w>=16;
+ if(d===5 && examPhase){
+   tasks=[
+    ["par","Paragraf: 15–20 soru + kısa analiz",25],["speed","Temel işlem ve problem hız seti",25],
+    ["math","Matematik eksik onarımı: "+wk.math,55],["sci1",subjectFor(science)+" konu/test: "+wk[science],55],
+    ["sci2",subjectFor(second)+" tekrar/test: "+wk[second],50],["rot","Geometri veya sosyal kısa tarama",35],
+    ["review","TYT denemesi yanlışlarını konuya göre sınıflandır",70],["mock","Tam TYT denemesi (165 dk) + başlangıç analizi",165]
+   ];
+ } else if(d===6 && w>=20 && w%2===0){
+   tasks=[
+    ["par","Paragraf: 10 soru, hafif tempo",15],["speed","Temel matematik 10 soru",20],
+    ["math","AYT matematik seçilmiş eksik: "+wk.math,45],["sci1","Fizik-kimya-biyoloji kısa tekrar",55],
+    ["sci2","Yanlış defteri: son iki denemeden seç",35],["rot","Geometri / sosyal kısa tekrar",30],
+    ["review","AYT denemesi analizini tamamla; net değil konu hatası bul",100],["mock","Tam AYT denemesi (180 dk)",180]
+   ];
+ }else if(d>=5){
+   let label=w<4?"Hafta özeti + temel kazanım testi":w<8?"Konu tarama testi + çözümlü analiz":w<16?"TYT/AYT branş denemesi veya 30 soruluk karma test":w<20?"Branş denemesi + ayrıntılı yanlış analizi":"Deneme sonrası eksik konu onarımı";
+   tasks.push(["test",label+" (120 dk)",120]);
+ }
+ return tasks.map(a=>({id:a[0],name:a[1],mins:a[2]}))
+}
+function tasksForDate(w,d){return dayTasks(w,d)}
+function dateTasksKey(w,d){return dateKey(dateOf(w,d))}
+function getTaskTotal(w,d){return tasksForDate(w,d).length}
+function progressCount(w,d){const k=dateTasksKey(w,d);return tasksForDate(w,d).filter(t=>person().checks[k+"_"+t.id]).length}
+function progressMarkup(done,total,id){const p=total?Math.round(100*done/total):0;return '<div class="progressline"><i id="'+id+'" style="width:'+p+'%"></i></div><div class="progressmeta"><span>'+done+' / '+total+' görev</span><span>'+p+'%</span></div>'}
+function updateProgress(){
+ const w=week;let done=0,total=0;
+ for(let d=0;d<7;d++){const dc=progressCount(w,d),tc=getTaskTotal(w,d);done+=dc;total+=tc;const p=Math.round(100*dc/tc);const fill=document.getElementById("dayfill-"+d);if(fill)fill.style.width=p+"%";const label=document.getElementById("daypct-"+d);if(label)label.textContent=p+"%";const ct=document.getElementById("daycount-"+d);if(ct)ct.textContent=dc+"/"+tc}
+ const p=Math.round(100*done/total),fill=document.getElementById("weekfill");if(fill)fill.style.width=p+"%";const txt=document.getElementById("weekcount");if(txt)txt.textContent=done+" / "+total+" görev";
+}
+function renderHeader(){
+ document.getElementById("students").innerHTML=PEOPLE.map((p,i)=>'<button class="studentbtn '+(selected===i?"active":"")+'" data-student="'+i+'">'+esc(p)+'</button>').join("");
+ const remaining=Math.max(0,Math.ceil((new Date(EXAM.getFullYear(),EXAM.getMonth(),EXAM.getDate())-new Date(new Date().getFullYear(),new Date().getMonth(),new Date().getDate()))/86400000));
+ document.getElementById("countNum").textContent=remaining;
+ document.getElementById("countLabel").textContent=remaining===0?"sınav başladı":"gün kaldı";
+ document.getElementById("themeBtn").textContent=DATA.theme==="dark"?"☀️":"🌙";
+ document.documentElement.dataset.theme=DATA.theme||"light";
+}
+function renderNav(){const tabs=[["program","📅 Program"],["netler","📈 Netler"],["kaynaklar","🎓 Kaynaklar"]];document.getElementById("viewnav").innerHTML=tabs.map(t=>'<button data-view="'+t[0]+'" class="'+(view===t[0]?"active":"")+'">'+t[1]+'</button>').join("")}
+function renderProgram(){
+ const wk=WEEKS[week], from=dateOf(week,0), to=dateOf(week,6);let done=0,total=0;
+ for(let d=0;d<7;d++){done+=progressCount(week,d);total+=getTaskTotal(week,d)}
+ let out='<section class="card quote"><div class="eyebrow">Bugünün notu</div>“'+esc(quoteToday())+'”</section>';
+ out+='<section class="card"><div class="weeknav"><button class="arrow" data-week="-1" aria-label="Önceki hafta">‹</button><h2>Hafta '+(week+1)+' · '+esc(wk.title)+'</h2><button class="arrow" data-week="1" aria-label="Sonraki hafta">›</button></div><p class="muted small center">'+fmt(from,{day:"numeric",month:"long"})+' – '+fmt(to,{day:"numeric",month:"long",year:"numeric"})+' <span class="tag">'+esc(wk.phase)+'</span></p>'+progressMarkup(done,total,"weekfill").replace('>'+done+' / '+total+' görev<',' id="weekcount">'+done+' / '+total+' görev<')+'</section>';
+ out+='<section class="notice">Her konu için “kesin çıkar” sözü verilemez. Bu rota, geçmiş sınavlarda sık karşılaşılan temel başlıklara öncelik verir. Video izlemek tek başına görev sayılmaz: aynı gün kolay-orta soru çöz, yanlışları ertesi gün yeniden dene.</section>';
+ out+='<div class="programgrid">';
+ for(let d=0;d<7;d++){
+  const dt=dateOf(week,d), tasks=tasksForDate(week,d), key=dateKey(dt), dc=progressCount(week,d), pct=Math.round(100*dc/tasks.length);
+  const isToday=dateKey(dt)===dateKey(new Date());const open=isToday||(!isToday&&d===0&&dateKey(new Date())<dateKey(START));
+  out+='<details class="card day" '+(open?"open":"")+'><summary><span><span class="daytitle">'+DAYNAMES[d]+'</span> '+(isToday?'<span class="tag">Bugün</span>':'')+'<br><span class="daydate">'+fmt(dt,{day:"numeric",month:"long"})+' · '+(d<5?"6 saat":(d===5?"8 saat":"8 saat"))+'</span></span><span class="daypercent" id="daypct-'+d+'">'+pct+'%</span></summary><div class="daybody"><div class="daytheme">Haftanın odağı: '+esc(wk.math)+' · '+esc(wk[["physics","chemistry","biology"][d%3]])+'</div><div class="dayquote">“'+esc(quoteFor(dt))+'”</div><div class="progressline"><i id="dayfill-'+d+'" style="width:'+pct+'%"></i></div><div class="progressmeta"><span id="daycount-'+d+'">'+dc+'/'+tasks.length+'</span><span>günlük ilerleme</span></div><div class="tasklist" style="margin-top:10px">';
+  tasks.forEach(t=>{const checked=!!person().checks[key+"_"+t.id];out+='<label class="task '+(checked?"done":"")+'"><input type="checkbox" class="task-check" data-key="'+key+"_"+t.id+'" '+(checked?"checked":"")+'><span class="taskname">'+esc(t.name)+'</span><span class="duration">'+t.mins+' dk</span></label>'});
+  out+='</div><label class="field" style="margin-top:12px"><span class="small muted"><b>Bugün ne öğrendim, neyi anlamadım?</b></span><textarea class="note" data-note="'+key+'" placeholder="Bir cümleyle not al...">'+esc(person().notes[key]||"")+'</textarea></label></div></details>';
+ }
+ out+='</div><section class="card"><h3>Bu haftanın çalışma kuralı</h3><p class="muted small">Video hızını anlama düzeyinize göre seçin. Anlamadığınız yerde durdurup kendi örneğinizi çözün; konu başına önce temel test, sonra orta seviye. Her yanlışın yanına sebebini yazın: bilgi, işlem, dikkat veya süre.</p><div class="grid2"><div class="stat"><span class="muted small">Başlangıç hedefi</span><b>İlk 4 hafta</b><span class="small muted">Temel kur + aynı gün pratik</span></div><div class="stat"><span class="muted small">Denemeye geçiş</span><b>Kademeli</b><span class="small muted">Önce kısa test, sonra tam deneme</span></div></div></section>';
+ document.getElementById("content").innerHTML=out;
+}
+function renderHomeStats(){
+ let checkN=Object.values(person().checks).filter(Boolean).length, recs=person().records.length;
+ return '<section class="card"><div class="eyebrow">'+esc(PEOPLE[selected])+' için takip</div><h2>Bugün küçük bir adım seç.</h2><p class="muted">Bu program, hiç temel yokmuş gibi başlar. Konu anlatımı ve soru çözümü aynı gün ilerler.</p><div class="grid2"><div class="stat"><span class="muted small">Tamamlanan görev</span><b>'+checkN+'</b></div><div class="stat"><span class="muted small">Kaydedilen deneme</span><b>'+recs+'</b></div></div><button class="submit" style="width:100%;margin-top:13px" data-view="program">Haftalık programa geç</button></section>'
+}
+function renderNets(){
+ const records=person().records.slice().sort((a,b)=>b.date.localeCompare(a.date));
+ const fields={TYT:[["Türkçe",40],["Matematik",40],["Fen",20],["Sosyal",20]],AYT:[["Matematik",40],["Fizik",14],["Kimya",13],["Biyoloji",13]]};
+ let sums={TYT:{total:0,max:120,n:0},AYT:{total:0,max:80,n:0}};
+ records.forEach(r=>{const f=fields[r.type];if(!f)return;const val=f.reduce((a,x)=>a+(Number(r.scores[x[0]])||0),0);sums[r.type].total+=val;sums[r.type].n++});
+ let bars=["TYT","AYT"].map(type=>{const s=sums[type],avg=s.n?s.total/s.n:0,p=Math.max(0,Math.min(100,100*avg/s.max));return '<div class="barrow"><b>'+type+' ort.</b><div class="barbg"><div class="barfill" style="width:'+p+'%"></div></div><span>'+avg.toFixed(1)+'/'+s.max+'</span></div>'}).join("");
+ let html='<section class="card"><div class="eyebrow">'+esc(PEOPLE[selected])+'</div><h2>Deneme netleri</h2><p class="muted small">Net hesabını deneme kitapçığındaki kurala göre gir. Ders bazlı netleri kaydet; sonuçları burada karşılaştır.</p><div class="bars">'+bars+'</div></section>';
+ html+='<section class="card"><h3>Yeni deneme ekle</h3><form id="recordForm" class="recordform"><div class="field"><label for="rdate">Tarih</label><input id="rdate" name="date" type="date" required value="'+dateKey(new Date())+'"></div><div class="field"><label for="rtype">Sınav</label><select id="rtype" name="type"><option>TYT</option><option>AYT</option></select></div><div class="field wide" id="scoreFields"></div><div class="field wide"><button class="submit" type="submit">Denemeyi kaydet</button></div></form></section>';
+ html+='<section class="card"><h3>Kayıt geçmişi</h3>';
+ if(!records.length)html+='<p class="muted small">Henüz deneme eklenmedi. İlk denemeden sonra ders bazlı netlerin burada görünür.</p>';
+ else{html+='<div class="records">';records.forEach(r=>{const f=fields[r.type],sum=f.reduce((a,x)=>a+(Number(r.scores[x[0]])||0),0);const details=f.map(x=>x[0]+': '+(Number(r.scores[x[0]])||0)).join(' · ');html+='<article class="record"><div class="recordtop"><b>'+fmt(new Date(r.date+"T00:00:00"),{day:"numeric",month:"short",year:"numeric"})+' · '+r.type+' · '+sum.toFixed(1)+' net</b><button class="delete" data-del="'+esc(r.id)+'" aria-label="Denemeyi sil">Sil</button></div><div class="recorddata">'+esc(details)+'</div></article>'});html+='</div>'}
+ html+='</section>';
+ document.getElementById("content").innerHTML=html;
+ document.getElementById("rtype").addEventListener("change",renderScoreFields);renderScoreFields();
+}
+function renderScoreFields(){const type=document.getElementById("rtype").value;const map=type==="TYT"?[["Türkçe",40],["Matematik",40],["Fen",20],["Sosyal",20]]:[["Matematik",40],["Fizik",14],["Kimya",13],["Biyoloji",13]];document.getElementById("scoreFields").innerHTML='<div class="recordform">'+map.map(x=>'<div class="field"><label for="s-'+x[0]+'">'+x[0]+' (0–'+x[1]+')</label><input id="s-'+x[0]+'" name="score-'+x[0]+'" type="number" min="0" max="'+x[1]+'" step="0.25" inputmode="decimal" placeholder="0"></div>').join("")+'</div>'}
+const SOURCES=[
+["TYT Matematik","Sıfırdan başlayanlar için Rehber Matematik’in “0’dan Matematik” kampı veya Mert Hoca’nın IntroMat serisi iyi bir başlangıç seçeneği. İkisinden birini ana kamp olarak seçin; her videodan sonra aynı gün 15–25 kolay soru çözün. Temel oturunca Matematiğin Güler Yüzü ile soru pratiği ekleyin.",[["Rehber Matematik · 0’dan kamp","https://www.youtube.com/results?search_query=Rehber+Matematik+0%27dan+Matematik+Kamp%C4%B1"],["Mert Hoca · IntroMat / TYT kampı","https://www.youtube.com/results?search_query=Mert+Hoca+IntroMat+70+G%C3%BCnde+TYT+Matematik"],["Matematiğin Güler Yüzü · soru pratiği","https://www.youtube.com/results?search_query=Matemati%C4%9Fin+G%C3%BCler+Y%C3%BCz%C3%BC+TYT+matematik+soru+%C3%A7%C3%B6z%C3%BCm%C3%BC"]]],
+["AYT Matematik","Önce cebir, fonksiyon ve polinom temelini kurun. Rehber Matematik veya Mert Hoca’nın AYT kampından birini ana kaynak seçin; başlangıçta iki kampı birden izlemeyin. Matematiğin Güler Yüzü’nü çözümlü soru pratiği için kullanın.",[["Mert Hoca · AYT kampı","https://www.youtube.com/results?search_query=Mert+Hoca+90+G%C3%BCnde+AYT+Matematik"],["Rehber Matematik · AYT kampı","https://www.youtube.com/results?search_query=Rehber+Matematik+AYT+Matematik+Kamp%C4%B1"],["Matematiğin Güler Yüzü · soru pratiği","https://www.youtube.com/results?search_query=Matemati%C4%9Fin+G%C3%BCler+Y%C3%BCz%C3%BC+AYT+matematik+soru+%C3%A7%C3%B6z%C3%BCm%C3%BC"]]],
+["Fizik","VIP Fizik’in TYT/AYT kampları tane tane konu anlatımı ve soru çözümünü birlikte sunuyor. Temel kavramları öğrendikten sonra Altuğ Güneş’in kısa TYT tekrarlarından yararlanabilirsiniz.","https://www.youtube.com/results?search_query=VIP+Fizik+50+G%C3%BCnde+TYT+Fizik+Kamp%C4%B1+2027"],
+["Kimya","Ana kaynak olarak Benim Hocam’daki Görkem Şahin’in TYT/AYT kimya kampını izleyin. Konu oturmadığında Kimya Adası’ndan farklı bir anlatım dinleyin; her konu videosunun ardından kolay test çözün.",[["Benim Hocam · Görkem Şahin kimya","https://www.youtube.com/results?search_query=Benim+Hocam+G%C3%B6rkem+%C5%9Eahin+TYT+AYT+Kimya+Kamp%C4%B1"],["Kimya Adası · alternatif anlatım","https://www.youtube.com/results?search_query=Kimya+Adas%C4%B1+TYT+Kimya+Kamp%C4%B1"]]],
+["Biyoloji","Biosem’in 2026–27 TYT biyoloji kampı ve AYT konu serileriyle ilerleyin. Her bölümden sonra notu kapatıp kavramları sesli hatırlayın ve aynı gün test çözün.","https://www.youtube.com/results?search_query=Biosem+39+G%C3%BCnde+TYT+Biyoloji+2026+2027"],
+["Türkçe ve paragraf","Ana kaynak olarak Aker Hoca’nın TYT Türkçe ve paragraf anlatımlarını kullanın. Her gün 15 soruyla başlayın; doğruluk oturdukça 20 soruya çıkın. Yanlışta yalnız cevabı değil, metindeki kanıtı bulun.",[["Aker Hoca · TYT Türkçe ve paragraf","https://www.youtube.com/results?search_query=Aker+Hoca+TYT+T%C3%BCrk%C3%A7e+Paragraf+Kamp%C4%B1"],["Rüştü Hoca · alternatif paragraf serisi","https://www.youtube.com/results?search_query=R%C3%BC%C5%9Ft%C3%BC+Hoca+paragraf+kamp%C4%B1+2026"]]],
+["Geometri","Temel şekiller ve üçgenlerde önce yavaş, çizerek öğrenin. Rehber Matematik’in başlangıç geometri serisi veya Kenan Kara’nın temel geometri anlatımlarından birini seçip sık kaynak değiştirmeyin.","https://www.youtube.com/results?search_query=Rehber+Matematik+0%27dan+Geometri+Kamp%C4%B1"],
+["TYT Sosyal","Sayısal puan türünde TYT sosyal de toplam nete katkı verir. Haftada 3 kısa oturumla Benim Hocam’ın temel konu serilerinden ilerleyin; ezber yerine kavram kartı ve kısa test kullanın.","https://www.youtube.com/results?search_query=Benim+Hocam+TYT+Sosyal+kamp%C4%B1"]
+];
+function renderResources(){
+ let html='<section class="card"><div class="eyebrow">Başlangıç seviyesi</div><h2>Hangi derste hangi hocayı dinlemeli?</h2><p class="muted small">Bir derste tek ana kamp seçin. Video + not + aynı gün soru + ertesi gün kısa tekrar. Konuyu anlamadıysanız ikinci hocayı yalnızca o başlık için açın.</p>';
+ SOURCES.forEach(s=>{const links=Array.isArray(s[2])?s[2]:[["YouTube’da kampı bul",s[2]]];html+='<div class="resource"><b>'+esc(s[0])+'</b><p>'+esc(s[1])+'</p>'+links.map(l=>'<a href="'+l[1]+'" target="_blank" rel="noopener">'+esc(l[0])+' ↗</a>').join(' · ')+'</div>'});html+='</section>';
+ html+='<section class="card"><h3>Bu programın öncelik sırası</h3><p class="small muted">İlk 4 hafta aritmetik-cebir ve fen kavramlarını kurar. Sonra problemler, üçgen-geometri ve temel TYT fen konuları düzenli pratikle ilerler. AYT matematik ve fen temelleri eş zamanlı başlar; bahar döneminde AYT ağırlığı ve deneme analizi artar. Günlük paragraf ve matematik hız çalışması yıl boyunca sürer.</p><div class="notice">“Her yıl istisnasız çıkar” biçiminde güvenilir bir konu garantisi yoktur; ÖSYM soru kitapçıkları her yıl farklı dağılım gösterebilir. Bu seçki yüksek öncelikli, temel kuran başlıklardır. 150 bin hedefi için sonuç garantisi verilemez; deneme sonuçlarına göre rota ve yükü düzenli güncelleyin.</div></section>';
+ html+='<section class="card"><h3>Planı hazırlarken kullanılan kaynaklar</h3><div class="resource"><b>2027 YKS tarihi</b><p>ÖSYM duyurusuna göre sınav 19–20 Haziran 2027’de yapılacak.</p><a href="https://www.osym.gov.tr/yks-19-20-haziran-2027de-yapilacak" target="_blank" rel="noopener">ÖSYM duyurusu ↗</a></div><div class="resource"><b>Geçmiş soru dağılımları</b><p>ÖSYM, gelecekteki sınavlar için konu bazlı garanti yayımlamaz. Öncelikler 2018–2026 kitapçıklarının geçmiş dağılımlarını inceleyen analizlere dayalıdır.</p><a href="https://ertansinansahin.com/yks-soru-dagilimi/" target="_blank" rel="noopener">2018–2026 konu dağılımı analizi ↗</a></div><div class="resource"><b>Çalışma ritmi</b><p>25 dakika odak + 5 dakika ara. Dört odak turundan sonra 20–30 dakika uzun mola verin. Çalışma planındaki dakika toplamları molaları içermez.</p></div></section>';
+ document.getElementById("content").innerHTML=html;
+}
+function render(){
+ renderHeader();renderNav();
+ if(view==="program"){renderProgram()}else if(view==="netler"){renderNets()}else{renderResources()}
+ if(storageFailed)toast("Cihaz kaydı çalışmıyor; uygulama bu sekmede kullanılmaya devam eder.");
+}
+function toast(msg){const el=document.getElementById("toast");el.textContent=msg;el.style.display="block";clearTimeout(toast.timer);toast.timer=setTimeout(()=>el.style.display="none",2600)}
+document.getElementById("students").addEventListener("click",e=>{const b=e.target.closest("[data-student]");if(!b)return;selected=Number(b.dataset.student);DATA.selected=selected;save();render()});
+document.getElementById("viewnav").addEventListener("click",e=>{const b=e.target.closest("[data-view]");if(!b)return;view=b.dataset.view;render()});
+document.getElementById("content").addEventListener("click",e=>{
+ const wb=e.target.closest("[data-week]");if(wb){week=Math.max(0,Math.min(31,week+Number(wb.dataset.week)));render();return}
+ const go=e.target.closest("[data-view]");if(go){view=go.dataset.view;render();return}
+ const del=e.target.closest("[data-del]");if(del){person().records=person().records.filter(r=>r.id!==del.dataset.del);save();render();toast("Deneme kaydı silindi.")}
+});
+document.getElementById("content").addEventListener("change",e=>{
+ if(e.target.matches(".task-check")){person().checks[e.target.dataset.key]=e.target.checked;save();e.target.closest(".task").classList.toggle("done",e.target.checked);updateProgress()}
+});
+document.getElementById("content").addEventListener("input",e=>{if(e.target.matches("[data-note]")){person().notes[e.target.dataset.note]=e.target.value;save()}});
+document.getElementById("content").addEventListener("submit",e=>{
+ if(e.target.id!=="recordForm")return;e.preventDefault();const form=new FormData(e.target),type=form.get("type"), names=type==="TYT"?["Türkçe","Matematik","Fen","Sosyal"]:["Matematik","Fizik","Kimya","Biyoloji"],scores={};
+ for(const n of names){const raw=form.get("score-"+n);const v=raw===""?0:Number(raw);if(!Number.isFinite(v)||v<0){toast("Netleri kontrol edin.");return}scores[n]=v}
+ const limits=type==="TYT"?{Türkçe:40,Matematik:40,Fen:20,Sosyal:20}:{Matematik:40,Fizik:14,Kimya:13,Biyoloji:13};
+ for(const n of names)if(scores[n]>limits[n]){toast(n+" neti üst sınırı aşamaz.");return}
+ person().records.push({id:Date.now().toString(36)+Math.random().toString(36).slice(2,7),date:String(form.get("date")),type:type,scores:scores});save();render();toast("Deneme kaydedildi.")
+});
+document.getElementById("themeBtn").addEventListener("click",()=>{DATA.theme=DATA.theme==="dark"?"light":"dark";save();render()});
+document.getElementById("resetBtn").addEventListener("click",()=>{if(!confirm("Abdurrahman ve Tuana için tüm işaretlemeler, notlar, netler ve tema tercihi silinsin mi?"))return;safeRemove();const f=fresh();DATA.selected=f.selected;DATA.theme=f.theme;DATA.people=f.people;selected=0;week=getDefaultWeek();view="program";save();render();toast("Tüm kayıtlar sıfırlandı.")});
+document.getElementById("todayBtn").addEventListener("click",()=>{week=getDefaultWeek();view="program";render();document.querySelector(".day[open]")?.scrollIntoView({behavior:"smooth",block:"start"})});
+document.getElementById("recordForm")?.addEventListener("submit",()=>{});
+function startPomodoro(){
+ const btn=document.createElement("button");btn.className="iconbtn";btn.id="pomoBtn";btn.textContent="🍅";btn.setAttribute("aria-label","Pomodoro zamanlayıcısını aç");document.querySelector(".head-actions").appendChild(btn);
+ btn.addEventListener("click",()=>{
+  let box=document.getElementById("pomoBox");if(box){box.style.display=box.style.display==="none"?"block":"none";return}
+  box=document.createElement("div");box.id="pomoBox";box.className="card";box.style.cssText="position:fixed;z-index:9;top:145px;right:14px;width:min(320px,calc(100vw - 28px));text-align:center";
+  box.innerHTML='<div class="eyebrow">Pomodoro</div><h2 id="pomoTime">25:00</h2><p class="muted small" id="pomoState">Çalışma zamanı</p><div style="display:flex;gap:8px"><button class="submit" id="pomoStart" style="flex:1">Başlat</button><button class="delete" id="pomoReset">Sıfırla</button></div><p class="muted small">25 dk odak · 5 dk mola</p>';document.body.appendChild(box);
+  let secs=1500,interval=null,rest=false;
+  const tick=()=>{secs--;document.getElementById("pomoTime").textContent=pad(Math.floor(secs/60))+":"+pad(secs%60);if(secs<=0){clearInterval(interval);interval=null;rest=!rest;secs=rest?300:1500;document.getElementById("pomoState").textContent=rest?"Mola zamanı — 5 dakika":"Yeni çalışma turu — 25 dakika";document.getElementById("pomoTime").textContent=rest?"05:00":"25:00";if("vibrate"in navigator)navigator.vibrate([150,80,150]);toast(rest?"Mola zamanı!":"Yeni odak turu hazır.")}};
+  document.getElementById("pomoStart").onclick=()=>{if(interval){clearInterval(interval);interval=null;document.getElementById("pomoStart").textContent="Devam";}else{interval=setInterval(tick,1000);document.getElementById("pomoStart").textContent="Duraklat"}};
+  document.getElementById("pomoReset").onclick=()=>{clearInterval(interval);interval=null;rest=false;secs=1500;document.getElementById("pomoTime").textContent="25:00";document.getElementById("pomoState").textContent="Çalışma zamanı";document.getElementById("pomoStart").textContent="Başlat"};
+ })
+}
+render();startPomodoro();
+</script>
+</body>
+</html>
